@@ -1,0 +1,76 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                    Frog_01.jpg  label:                       frog
+ 2 key:     Australian_Shepherd_01.jpg  label:        australian shepherd
+ 3 key:     Aston_Martin_F1_Car_01.jpg  label:           aston martin car
+ 4 key:     Australian_Shepherd_02.jpg  label:        australian shepherd
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog
+
+ NOT A MATCH:
+
+    Australian_Shepherd_01.jpg: 
+Real:        australian shepherd   Classifier: shetland sheepdog, shetland sheep dog, shetland
+
+    Aston_Martin_F1_Car_01.jpg: 
+Real:           aston martin car   Classifier:                radio, wireless
+
+    Australian_Shepherd_02.jpg: 
+Real:        australian shepherd   Classifier: shetland sheepdog, shetland sheep dog, shetland
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+    Australian_Shepherd_01.jpg: 
+Real:        australian shepherd   Classifier: shetland sheepdog, shetland sheep dog, shetland  
+PetLabelDog: 1  ClassLabelDog: 1
+
+    Aston_Martin_F1_Car_01.jpg: 
+Real:           aston martin car   Classifier:                radio, wireless  
+PetLabelDog: 0  ClassLabelDog: 0
+
+    Australian_Shepherd_02.jpg: 
+Real:        australian shepherd   Classifier: shetland sheepdog, shetland sheep dog, shetland  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match, 25.0
+pct_correct_dogs, 100.0
+pct_correct_breed, 0.0
+pct_correct_notdogs, 100.0
+
+INCORRECT Dog Breed Assignment:
+Real:        australian shepherd   Classifier: shetland sheepdog, shetland sheep dog, shetland
+Real:        australian shepherd   Classifier: shetland sheepdog, shetland sheep dog, shetland
+
+** Total Elapsed Runtime: 0:0:0
